@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .menu{
+    display: flex;
+    margin-right: 20px;
+}
+
+.line{
+    background-color: rgb(49, 49, 49);
+    height: 5px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+hr, .line{
+    margin-top: 40px;
+}
+
+
+/* ------------- main ----------- */
+
+.container{
+    padding: 20px 3%;
+}
+
+.main-title{
+    padding-top: 25%;
+}
+
+h1{
+    font-size: 80pt;
+}
+
+/* ---------- portfolio section --------- */
+
+
+
+
+
+/* ---------- footer --------- */
+
+.footer{
+    display: flex;
+    
+}
+
+
