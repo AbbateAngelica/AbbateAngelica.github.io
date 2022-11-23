@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angelica Abbate - Diseñadora Web</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@100;200;300;400;500;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -13,9 +16,9 @@
             <a href="index.html"><p>Angelica Abbate</p></a>
         </div>
         <div class="menu">
-            <a href=""><p>Portafolio</p></a>
-            <a href=""><p>Sobre mi</p></a>
-            <a href=""><p>Contacto</p></a>
+            <button onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });"><span>Portafolio</span></button>
+            <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });"><span>Sobre mi</span></button>
+            <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"><span>Contacto</span></button>
         </div>
     </nav>
 
@@ -28,67 +31,75 @@
         <section>
             <div class="container main-title">
                 <h1>¡Hola! Soy la diseñadora <br> que estabas buscado <br> para tu proyecto web :)</h1>
+                <div class="line"></div>
             </div>
-            <div class="line"></div>
         </section>
 
 <!-- -------- portfolio items ---------- -->
 
-        <section>
+        <section id="portfolio" class="portfolio">
 
             <div class="container">
                 <div class="portfolio-item">
                     <div class="portfolio-content">
-                        <h3>De que trata el proyecto 1</h3>
                         <img src="images/estudiar-diseno-grafico.jpg" alt="">
                     </div>
                     <div class="portfolio-info">
                         <h3>Proyecto 1</h3>
                         <p>Información del proyecto (que), bajo estas herramientas (como), con un propósito (para)</p>
-                        <p class="date"></p>
+                        <p class="date">Fecha de finalización ----- 11/2022</p>
                     </div>
                 </div>
-                <hr>
             </div>
             <div class="container">
                 <div class="portfolio-item">
                     <div class="portfolio-content">
-                        <h3>De que trata el proyecto 2</h3>
                         <img src="images/estudiar-diseno-grafico.jpg" alt="">
                     </div>
                     <div class="portfolio-info">
                         <h3>Proyecto 2</h3>
                         <p>Información del proyecto (que), bajo estas herramientas (como), con un propósito (para)</p>
-                        <p class="date"></p>
+                        <p class="date">Fecha de finalización ----- 11/2022</p>
                     </div>
                 </div>
-                <hr>
             </div>
             <div class="container">
                 <div class="portfolio-item">
                     <div class="portfolio-content">
-                        <h3>De que trata el proyecto 3</h3>
                         <img src="images/estudiar-diseno-grafico.jpg" alt="">
                     </div>
                     <div class="portfolio-info">
                         <h3>Proyecto 3</h3>
                         <p>Información del proyecto (que), bajo estas herramientas (como), con un propósito (para)</p>
-                        <p class="date">desarrollado en 11/2022</p>
+                        <p class="date">Fecha de finalización ----- 11/2022</p>
                     </div>
                 </div>
-                <hr>
             </div>
             
 
         </section>
 
+<!-- -----------about me--------- -->
+        <section id="about">
+            <div class="container container-profile">
+                <div class="about-info">
+                    <p>Mi nombre es Angelica Abbate, maquetadora web freelance com +2 años de experiencia. Estudio diseño gráfico en la Universidad de Buenos Aires. Me encanta el mundo digital y el estudio de diseño UX.</p>
+                    <br>
+                    <p>Habilidades: HTML, CSS, SASS, JavaScript, Figma, Paquete Adobe, Metodologías ágiles.</p>
+                </div>
+                <div class="about-profile">
+                    <img src="images/foto-perfil-2.jpg" alt="">
+                </div>
+
+            </div>
+        </section>
 <!-- -------- contact ---------- -->
 
-        <section>
-            <div class="container">
+        <section id="contact">
+            <div class="container container-color">
                 <div class="container-contact">
                     <h2>Trabajemos juntos</h2>
-                    <a href="">angelicabbate@gmail.com</a>
+                    <a href="mailto:angelicabbate@gmail.com">angelicabbate@gmail.com</a>
                 </div>
             </div>
         </section>

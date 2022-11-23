@@ -1,8 +1,16 @@
+:root{
+    --main-bg-color: #ffeaea;
+}
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Alegreya', sans-serif;
+    font-size: 18px;
 }
 
 a{
@@ -16,48 +24,145 @@ nav{
     width: 100%;
     justify-content: space-between;
     padding: 20px 30px;
+    background-color: #ffffff;
 }
 
 nav .menu{
     display: flex;
 }
 
+.menu button{
+    font-family: 'Alegreya', sans-serif;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.menu button span{
+    display: flex;
+    justify-content: right;
+}
+
 .line{
-    background-color: rgb(49, 49, 49);
+    background-color: #64B6AC;
     height: 5px;
     width: 80%;
     margin: 0 auto;
+    margin-top: 60px;
     border-radius: 5px;
 }
-
-hr, .line{
-    margin-top: 40px;
-}
-
 
 /* ------------- main ----------- */
 
 .container{
     padding: 20px 3%;
+    display: flex
 }
 
 .main-title{
-    padding: 15% 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
 }
 
-h1{
-    font-size: 80pt;
+h1, h2{
+    font-size: 6em;
     text-align: center;
+    font-family: 'Nunito';
+    font-weight: 100;
+}
+
+h2{
+    font-size: 8em;
 }
 
 /* ---------- portfolio section --------- */
 
+h3{
+    font-size: 30px;
+}
+
 .portfolio-item{
     display: flex;
+    margin: 8% 6%;
+}
+
+.portfolio-content{
+    width: 65%;
+
+}
+
+.portfolio-content h3{
+    display: inline-flex;
+    width: 100%;
+    justify-content: right;
+    font-weight: 300;
+}
+
+.portfolio-content img{
+    width: 100%;
 }
 
 .portfolio-info{
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 0 2%;
+}
+
+.portfolio-info .date{
+    margin-top: auto;
+    margin-bottom: 3px;
+}
+
+.portfolio-info h3{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.portfolio .container:first-child{
+    background-color: #e7faf8;
+}
+
+.portfolio .container {
+    background-color: #ffffff;
+}
+
+.portfolio .container:last-child{
+    background-color: #e7faf8;
+}
+
+
+/* ----------- about profile ----------- */
+
+.container-profile{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 12% 6%;
+    align-items: center;
+
+}
+
+.about-profile{
+width: 40%;
+padding-left: 4%;
+}
+
+.about-profile img{
+    width: 100%;
+    border-radius: 2px;
+}
+
+.about-info {
+    width: 60%;
+    text-align: right;
+    font-size: 32px;
+    color: #555;
 }
 
 
@@ -65,17 +170,29 @@ h1{
 /* ---------- contact --------- */
 
 .container-contact{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
+    min-height: 400px;
     padding: 15% 0;
     text-align: center;
 
 }
 
-.container-contact h2{
-    font-size: 100px;
+.container-color{
+    background-color: var(--main-bg-color);
 }
 
 .container-contact a{
+
+    
+    display: block;
+    padding-top: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #7a7a7a;
 }
 
 /* ---------- footer --------- */
@@ -84,8 +201,65 @@ h1{
     display: flex;
     width: 100%;
     padding: 2% 4%;
-    background-color: rgb(235, 188, 219);
+    background-color: #a2dad3;
+    justify-content: right;
+    font-size: 14px;
     
 }
+
+@media screen and (max-width:1160px) {
+h1{
+    font-size:5em;
+}
+h2{
+    font-size:7em;
+}
+}
+
+@media screen and (max-width:900px){
+    h1{
+        font-size: 4em;
+    }
+    h2{
+        font-size: 6em;
+    }
+
+.about-info p{
+    font-size: 20px;
+}
+    .portfolio-info{
+        width: 45%;
+    }
+    .portfolio-content{
+        width: 60%;
+    }
+    .portfolio-info h3{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:640px){
+    h2{
+        font-size: 5em;
+    }
+    body{
+        font-size: 16px;
+    }
+    .portfolio-info h3{
+        font-size: 25px;
+    }
+    .container-contact a{
+        font-size: 30px;
+    }
+    .container-profile{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-info{
+        order: 3;
+        text-align: center;
+    }
+}
+
 
 
