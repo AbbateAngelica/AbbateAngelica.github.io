@@ -25,6 +25,7 @@ nav{
     justify-content: space-between;
     padding: 20px 30px;
     background-color: #ffffff;
+    z-index: 2;
 }
 
 nav .menu{
@@ -67,6 +68,11 @@ nav .menu{
     height: 100vh;
     justify-content: center;
     flex-direction: column;
+
+}
+
+.main-title span{
+    color: #64B6AC;
 }
 
 h1, h2{
@@ -117,6 +123,10 @@ h3{
 .portfolio-info .date{
     margin-top: auto;
     margin-bottom: 3px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .portfolio-info h3{
@@ -261,5 +271,9 @@ h2{
     }
 }
 
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 4s;
+  }
 
 
