@@ -38,7 +38,7 @@ nav .menu{
     border: none;
     cursor: pointer;
     color: #555;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 15px;
 }
 
@@ -144,6 +144,18 @@ h3{
 
 .portfolio .container:last-child{
     background-color: #e7faf8;
+}
+
+.divider{
+    background-color: #e7faf8;
+    height: 2px;
+}
+
+.divider .line{
+    width: 80%;
+    border-radius: 5px;
+    height: 2px;
+    margin-top: 0;
 }
 
 
@@ -266,11 +278,42 @@ h2{
         justify-content: center;
     }
     .about-info{
+        margin-top: 40px;
         order: 3;
         text-align: center;
     }
+    .main-title span{
+        font-weight: 500;
+    }
+    .portfolio-item{
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 20px;
+    }
+    .portfolio-content{
+        width: 100%;
+    }
+    .portfolio-info{
+        width: 100%;
+    }
 }
-
+@media screen and (max-width:530px){
+    h2{
+        font-size: 4em;
+    }
+    h1{
+        font-size: 3em;
+    }
+    .logo{
+        width: 40px;
+    }
+    .main-title{
+        padding: 40px;
+    }
+}
 
 .animate__animated.animate__fadeIn {
     --animate-duration: 4s;
