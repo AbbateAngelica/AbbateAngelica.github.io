@@ -1,5 +1,11 @@
+
+
 :root{
-    --main-bg-color: #ffeaea;
+    --primary: #85FFC7;
+    --secondary: #297373;
+    --contrast: #FF81C4;
+    --black: #0D1821;
+    --white: #F4FFFC;
 }
 
 *{
@@ -9,13 +15,20 @@
 }
 
 body{
-    font-family: 'Alegreya', sans-serif;
-    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    background-color: var(--black);
+    font-weight: 400;
+    color: var(--black);
 }
+
+/* --------------- nav ---------- */
 
 a{
     text-decoration: none;
-    color: #555;
+    font-family: 'Nunito';
+    font-weight: 900;
+    color: var(--black);
 }
 
 nav{
@@ -23,8 +36,8 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 20px 30px;
-    background-color: #ffffff;
+    padding: 10px 30px;
+    background-color: var(--primary);
     z-index: 2;
 }
 
@@ -33,12 +46,13 @@ nav .menu{
 }
 
 .menu button{
-    font-family: 'Alegreya', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: #555;
-    font-size: 16px;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 500;
     margin-left: 15px;
 }
 
@@ -47,16 +61,17 @@ nav .menu{
     justify-content: right;
 }
 
+
+/* ------------- main ----------- */
+
 .line{
-    background-color: #64B6AC;
+    background-color: var(--primary);
     height: 5px;
     width: 80%;
     margin: 0 auto;
     margin-top: 60px;
     border-radius: 5px;
 }
-
-/* ------------- main ----------- */
 
 .container{
     padding: 20px 3%;
@@ -72,18 +87,19 @@ nav .menu{
 }
 
 .main-title span{
-    color: #64B6AC;
+    color: var(--primary);
 }
 
 h1, h2{
-    font-size: 6em;
+    font-size: 4em;
+    color: var(--white);
     text-align: center;
     font-family: 'Nunito';
     font-weight: 100;
 }
 
 h2{
-    font-size: 8em;
+    font-size: 6em;
 }
 
 /* ---------- portfolio section --------- */
@@ -124,7 +140,7 @@ h3{
     margin-top: auto;
     margin-bottom: 3px;
     font-size: 16px;
-    color: black;
+    color: var(--black);
     font-weight: bold;
     cursor: pointer;
 }
@@ -135,19 +151,19 @@ h3{
 }
 
 .portfolio .container:first-child{
-    background-color: #e7faf8;
+    background-color: var(--secondary);
 }
 
 .portfolio .container {
-    background-color: #ffffff;
+    background-color: var(--secondary);
 }
 
 .portfolio .container:last-child{
-    background-color: #e7faf8;
+    background-color: var(--secondary);
 }
 
 .divider{
-    background-color: #e7faf8;
+    background-color: var(--black);
     height: 2px;
 }
 
@@ -184,7 +200,7 @@ padding-left: 4%;
     width: 60%;
     text-align: right;
     font-size: 32px;
-    color: #555;
+    color: var(--black);
 }
 
 
@@ -200,11 +216,12 @@ padding-left: 4%;
     min-height: 400px;
     padding: 15% 0;
     text-align: center;
+    background-color: var(--secondary);
 
 }
 
 .container-color{
-    background-color: var(--main-bg-color);
+    background-color: var(--secondary);
 }
 
 .container-contact a{
@@ -214,7 +231,7 @@ padding-left: 4%;
     padding-top: 20px;
     font-size: 50px;
     font-weight: 600;
-    color: #7a7a7a;
+    color: var(--primary);
 }
 
 /* ---------- footer --------- */
@@ -223,7 +240,7 @@ padding-left: 4%;
     display: flex;
     width: 100%;
     padding: 2% 4%;
-    background-color: #a2dad3;
+    background-color: var(--black);
     justify-content: right;
     font-size: 14px;
     
