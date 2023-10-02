@@ -17,9 +17,10 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
+    /* letter-spacing: 1px; */
     background-color: var(--black);
     font-weight: 400;
-    color: var(--black);
+    color: var(--white);
 }
 
 /* --------------- nav ---------- */
@@ -228,7 +229,7 @@ padding-left: 4%;
 
     
     display: block;
-    padding-top: 20px;
+    padding-top: 40px;
     font-size: 50px;
     font-weight: 600;
     cursor: pointer;
@@ -240,12 +241,36 @@ padding-left: 4%;
 .footer{
     display: flex;
     width: 100%;
-    padding: 2% 4%;
+    padding: 1% 2%;
     background-color: var(--black);
     justify-content: right;
     font-size: 14px;
+    /* font-family: 'nunito'; */
     
 }
+
+.footer span {
+    font-weight: 700;
+}
+
+/* ---------------- MISC --------------- */
+
+#notificacion {
+    font-size: 16px;
+    font-weight: 500;
+    display: none;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    color: var(--black);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+
+/* ---------------- MEDIA QUERIES --------------*/
 
 @media screen and (max-width:1160px) {
 h1{
