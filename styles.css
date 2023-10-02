@@ -62,9 +62,6 @@ nav .menu{
     justify-content: right;
 }
 
-
-/* ------------- main ----------- */
-
 .line{
     background-color: var(--primary);
     height: 5px;
@@ -76,13 +73,34 @@ nav .menu{
 
 .container{
     padding: 20px 3%;
-    display: flex
+    display: flex;
+}
+
+/* ------------- main ----------- */
+
+.container-main {
+    width: 100%;
+    height: 100vh;
+    padding: 12% 6%;
+}
+
+.left-main {
+    width: 40%;
+}
+
+.left-main img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.right-main {
+    width: 60%;
 }
 
 .main-title{
     display: flex;
     height: 100vh;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
 
 }
@@ -92,15 +110,15 @@ nav .menu{
 }
 
 h1, h2{
-    font-size: 4em;
+    font-size: 3em;
     color: var(--white);
-    text-align: center;
     font-family: 'Nunito';
     font-weight: 100;
 }
 
 h2{
     font-size: 6em;
+    text-align: center;
 }
 
 /* ---------- portfolio section --------- */
@@ -174,37 +192,6 @@ h3{
     height: 2px;
     margin-top: 0;
 }
-
-
-/* ----------- about profile ----------- */
-
-.container-profile{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    padding: 12% 6%;
-    align-items: center;
-
-}
-
-.about-profile{
-width: 40%;
-padding-left: 4%;
-}
-
-.about-profile img{
-    width: 100%;
-    border-radius: 2px;
-}
-
-.about-info {
-    width: 60%;
-    text-align: right;
-    font-size: 32px;
-    color: var(--black);
-}
-
-
 
 /* ---------- contact --------- */
 
@@ -289,20 +276,6 @@ h2{
         font-size: 6em;
     }
 
-.about-info p{
-    font-size: 20px;
-}
-    .portfolio-info{
-        width: 45%;
-    }
-    .portfolio-content{
-        width: 60%;
-    }
-    .portfolio-info h3{
-        font-size: 30px;
-    }
-}
-
 @media screen and (max-width:640px){
     h2{
         font-size: 5em;
@@ -320,11 +293,7 @@ h2{
         flex-direction: column;
         justify-content: center;
     }
-    .about-info{
-        margin-top: 40px;
-        order: 3;
-        text-align: center;
-    }
+
     .main-title span{
         font-weight: 500;
     }
@@ -347,20 +316,6 @@ h2{
         width: 100%;
     }
 
-    .about-info{
-        width: 100%;
-        max-width: 400px;
-    }
-    .about-profile{
-        max-width: 250px;
-        width: 100%;
-    }
-    .about-info p{
-        font-size: 16px;
-    }
-    h1{
-        padding-top: 25px;
-    }
 
 }
 @media screen and (max-width:530px){
@@ -392,4 +347,4 @@ h2{
     --animate-duration: 4s;
   }
 
-
+}
