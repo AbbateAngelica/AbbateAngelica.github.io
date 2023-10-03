@@ -16,10 +16,10 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     /* letter-spacing: 1px; */
     background-color: var(--black);
-    font-weight: 400;
+    font-weight: 300;
     color: var(--white);
 }
 
@@ -64,16 +64,41 @@ nav .menu{
 
 .line{
     background-color: var(--primary);
-    height: 5px;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 60px;
+    height: 100%;
+    width: 5px;
+    margin: 0 50px;
     border-radius: 5px;
 }
 
 .container{
     padding: 20px 3%;
     display: flex;
+}
+
+.btn-container {
+margin-top: 30px;
+margin-left: 4px;
+display: flex;
+}
+
+.btn {
+padding: 10px 20px;
+  border: none;
+  background-color: var(--primary); 
+  color: var(--black);
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn:hover{
+    transform: scale(1.12);
+}
+.btn-secondary {
+    background-color: var(--secondary);
+    margin-left: 20px;
 }
 
 /* ------------- main ----------- */
@@ -84,25 +109,48 @@ nav .menu{
     padding: 12% 6%;
 }
 
-.left-main {
-    width: 40%;
+.container-align-vertical { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.left-main img {
+.left-main {
+    width: 30%;
+    /* display: flex; */
+
+}
+
+.left-main p {
+    font-size: 14px;
+    margin-top: 40px;
+    text-align: right;
+}
+
+.container-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    margin: 0 auto;
+    overflow: hidden; 
+
+}
+
+.container-img img {
     width: 100%;
     border-radius: 2px;
 }
 
 .right-main {
-    width: 60%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    /* height: 100vh; */
 }
 
 .main-title{
     display: flex;
-    height: 100vh;
-    justify-content: left;
     flex-direction: column;
-
 }
 
 .main-title span{
@@ -217,7 +265,7 @@ h3{
     
     display: block;
     padding-top: 40px;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
     cursor: pointer;
     color: var(--primary);
@@ -347,4 +395,8 @@ h2{
     --animate-duration: 4s;
   }
 
+}
+
+.animate__animated.animate__pulse {
+    --animate-duration:2s;
 }
