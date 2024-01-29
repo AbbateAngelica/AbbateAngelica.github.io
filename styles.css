@@ -4,6 +4,7 @@
     --contrast: #FF81C4;
     --black: #0D1821;
     --white: #F4FFFC;
+    --swiper-theme-color: #85FFC7;
 }
 
 * {
@@ -277,6 +278,24 @@ h3 {
     border-radius: 5px;
     height: 2px;
     margin-top: 0;
+}
+
+/* swiper styles */
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    padding: 0 48px;
+}
+
+.swiper-button-next {
+    padding-right: 24px;
+}
+
+.swiper-button-prev {
+    padding-left: 24px;
 }
 
 /* ---------- contact --------- */

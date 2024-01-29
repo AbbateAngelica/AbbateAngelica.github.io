@@ -1,3 +1,5 @@
+// Clipboard (para copiar en el portapapeles)
+
 var clipboard = new ClipboardJS('.js-mail-copy');
 
 clipboard.on('success', function(e) {
@@ -17,4 +19,19 @@ clipboard.on('success', function(e) {
 clipboard.on('error', function(e) {
     console.error('Action:', e.action);
     console.error('Trigger:', e.trigger);
+});
+
+// Swiper initialization
+
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  spaceBetween: 100,
+  autoplay: {
+    delay: 25000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
