@@ -1,95 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Angelica Abbate - Diseñadora Web</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
     <nav class="animate__animated animate__slideInDown">
-        <div class="logo">
-            <a href="index.html"><p>Angelica Abbate</p></a>
-        </div>
-        <div class="menu">
-            <button onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });"><span>Portafolio</span></button>
-            <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"><span>Contacto</span></button>
-        </div>
+      <div class="logo">
+        <a href="index.html">
+          <p>Angelica Abbate</p>
+        </a>
+      </div>
+      <div class="menu">
+        <button
+          onclick="document.querySelector('#portfolio-design .scroll-target').scrollIntoView({ behavior: 'smooth' });"
+        >
+          <span>Portafolio de diseño</span>
+        </button>
+        <button
+          onclick="document.querySelector('#portfolio-developer .scroll-target').scrollIntoView({ behavior: 'smooth' });"
+        >
+          <span>Portafolio de desarrollo web</span>
+        </button>
+        <button
+          onclick="document.querySelector('#contact .scroll-target').scrollIntoView({ behavior: 'smooth' });"
+        >
+          <span>Contacto</span>
+        </button>
+      </div>
     </nav>
 
-
     <main>
+      <!-- ------------ top-page ------------- -->
 
-<!-- ------------ top-page ------------- -->
-
-
-        <section>
-            <div class="container container-main">
-                <div class="container-align-vertical left-main">
-                        <div class="container-img">
-                            <img src="images/foto-perfil-2.jpg" alt="foto de Angelica">
-                        </div>
-                        <!-- <p>Mi nombre es Angélica, con 29 años de edad, cuento con trayectoria como profesional independiente en las áreas de maquetación, diseño y desarrollo web. Mi pasión por aprender y mi compromiso con la excelencia en cada proyecto que emprendo son rasgos distintivos de mi enfoque de trabajo. <br><br>
+      <section>
+        <div class="container container-main">
+          <div class="container-align-vertical left-main">
+            <div class="container-img">
+              <img src="images/foto-perfil-2.jpg" alt="foto de Angelica" />
+            </div>
+            <!-- <p>Mi nombre es Angélica, con 29 años de edad, cuento con trayectoria como profesional independiente en las áreas de maquetación, diseño y desarrollo web. Mi pasión por aprender y mi compromiso con la excelencia en cada proyecto que emprendo son rasgos distintivos de mi enfoque de trabajo. <br><br>
 
                             Resido en Buenos Aires, Argentina, y estoy comprometida en continuar expandiendo mis habilidades y conocimientos para ofrecer soluciones web de alta calidad.</p> -->
-                </div>
-                <div class="line"></div>
-                <div class="container-align-vertical">
-
-                    <div class="main-title animate__animated animate__fadeIn">
-                        <h1> <span>¡Hola!</span>  Soy la desarrolladora que estabas buscado, trabajemos juntos :) </h1>
-                        <div class="btn-container">
-                            <button class="btn">Descarga mi CV</button>
-                            <button class="btn btn-secondary">Visita mi Github</button>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="line"></div>
+          <div class="container-align-vertical">
+            <div class="main-title animate__animated animate__fadeIn">
+              <h1>
+                <span>¡Hola!</span> Soy la desarrolladora web que estabas
+                buscado, trabajemos juntos :)
+              </h1>
+              <div class="btn-container">
+                <button class="btn">Descarga mi CV</button>
+                <button class="btn btn-secondary">Visita mi Github</button>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------- portfolios ---------- -->
+
+      <section id="portfolio-design" class="portfolio">
+        <div class="scroll-target"></div>
+        <div class="bg-secondary">
+          <h3 class="portfolio-title">Portafolio de diseño gráfico</h3>
+          <div class="container">
+            <div class="portfolio-item">
+              <div class="portfolio-content">
+                <img src="images/proyecto-2.png" alt="" />
+              </div>
+              <div class="portfolio-info">
+                <h4>Branding Juguetería didak</h4>
+                <p>
+                  Branding de marca con aplicaciones en diferentes plataformas,
+                  generando un sistema de identidad. Diseñado con la suit de
+                  adobe.
+                </p>
+                <a class="link" target="”_blank”" href="images/proyecto 2.pdf"
+                  >Ver proyecto →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <section id="portfolio-developer" class="portfolio">
+          <div class="scroll-target"></div>
+          <div class="bg-black">
+            <h3 class="portfolio-title">Portafolio de desarrollo web</h3>
+            <div class="container">
+              <div class="portfolio-item">
+                <div class="portfolio-content">
+                  <img src="images/proyecto-1.jpg" alt="" />
+                </div>
+                <div class="portfolio-info">
+                  <h4>Web de agencia de viajes</h4>
+                  <p>
+                    Landing page completa, pensada para una agencia de viajes,
+                    diseñada con Figma. Desarrollada considerando metodologías
+                    ágiles y lista para producción.
+                  </p>
+                  <a
+                    class="link"
+                    target="”_blank”"
+                    href="https://www.figma.com/file/f57wu1NRqBcXybQLwVtqOO/Figma-Curso-Templune---P%C3%A1gina-web-2022-(Community)?node-id=102%3A125"
+                    >Ver proyecto →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-
-<!-- -------- portfolio items ---------- -->
-
-        <section id="portfolio" class="portfolio">
-
-            <div class="container">
-                <div class="portfolio-item">
-                    <div class="portfolio-content">
-                        <img src="images/proyecto-2.png" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Branding Juguetería didak</h3>
-                        <p>Branding de marca con aplicaciones en diferentes plataformas, generando un sistema de identidad. Diseñado con la suit de adobe.</p>
-                        <a class="date" target=”_blank” href="images/proyecto 2.pdf">Ver proyecto →</a>
-                    </div>
-                </div>
-            </div>
-            <div class="divider">
-                <div class="line"></div>
-            </div>
-            <div class="container">
-                <div class="portfolio-item">
-                    <div class="portfolio-content">
-                        <img src="images/proyecto-1.jpg" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Web de agencia de viajes</h3>
-                        <p>Landing page completa, pensada para una agencia de viajes, diseñada con Figma. Desarrollada considerando metodologías ágiles y lista para producción.</p>
-                        <a class="date" target=”_blank” href="https://www.figma.com/file/f57wu1NRqBcXybQLwVtqOO/Figma-Curso-Templune---P%C3%A1gina-web-2022-(Community)?node-id=102%3A125">Ver proyecto →</a>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="container">
+        <!-- <div class="container">
                 <div class="portfolio-item">
                     <div class="portfolio-content">
                         <img src="images/estudiar-diseno-grafico.jpg" alt="">
@@ -101,35 +143,35 @@
                     </div>
                 </div>
             </div> -->
-            
+      </section>
 
-        </section>
+      <!-- -------- contact ---------- -->
 
-<!-- -------- contact ---------- -->
-
-        <section id="contact">
-            <div class="container container-color">
-                <div class="container-contact">
-                    <h2>Contáctame</h2>
-                    <a data-clipboard-text="angelicabbate@gmail.com" class="js-mail-copy" >angelicabbate@gmail.com</a>
-                </div>
-            </div>
-        </section>
-        
+      <section id="contact">
+        <div class="scroll-target"></div>
+        <div class="container container-color">
+          <div class="container-contact">
+            <h2>Contáctame</h2>
+            <a
+              data-clipboard-text="angelicabbate@gmail.com"
+              class="js-mail-copy"
+              >angelicabbate@gmail.com</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="redes"> 
-        </div>
-        <div>
-            <p><span>Actualizado por última vez:</span> Octubre 2023</p>
-        </div>
+      <div class="redes"></div>
+      <div>
+        <p><span>Actualizado por última vez:</span> Enero 2024</p>
+      </div>
     </footer>
 
     <div id="notificacion">Copiado al portapapeles</div>
 
     <script src="./clipboard.min.js"></script>
     <script src="./main.js"></script>
-
-</body>
+  </body>
 </html>
