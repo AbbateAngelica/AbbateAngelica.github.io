@@ -63,10 +63,12 @@ nav .menu {
 
 .line {
     background-color: var(--primary);
-    height: 100%;
+    max-height: 600px;
+    height: 80%;
     width: 5px;
     margin: 0 50px;
     border-radius: 5px;
+    align-self: center;
 }
 
 .portfolio,
@@ -122,10 +124,16 @@ nav .menu {
 
 /* ------------- main ----------- */
 
+.nav-padding {
+    padding-top: 20px;
+}
+
 .container-main {
     width: 100%;
     height: 100vh;
-    padding: 12% 6%;
+    padding: 0 80px;
+    max-width: 1340px;
+    margin: 0 auto;
 }
 
 .container-align-vertical {
@@ -134,11 +142,6 @@ nav .menu {
     justify-content: center;
 }
 
-.left-main {
-    width: 30%;
-    /* display: flex; */
-
-}
 
 .left-main p {
     font-size: 14px;
@@ -191,12 +194,9 @@ h2 {
 
 /* ---------- portfolio section --------- */
 
-h4 {
-    font-size: 30px;
-}
 
 h3 {
-    font-size: 2em;
+    font-size: 2.3em;
 }
 
 .portfolio-title {
@@ -216,7 +216,9 @@ h3 {
 
 .portfolio-content {
     width: 65%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .portfolio-content h4 {
@@ -237,10 +239,10 @@ h3 {
     padding: 0 2%;
 }
 
-.portfolio-info .link {
+.link {
     display: block;
     margin-top: auto;
-    margin-bottom: 3px;
+    padding-top: 6px;
     font-size: 16px;
     color: var(--primary);
     font-weight: bold;
@@ -249,12 +251,11 @@ h3 {
 
 .link-container {
     margin-top: auto;
-    margin-bottom: 3px;
 }
 
 .portfolio-info h4 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 1.8em;
     font-family: 'nunito';
     color: var(--primary);
 }
@@ -326,10 +327,8 @@ h3 {
 }
 
 .container-contact a {
-
-
     display: block;
-    font-size: 40px;
+    font-size: 2.2em;
     font-weight: 600;
     cursor: pointer;
     color: var(--primary);
@@ -378,30 +377,39 @@ h3 {
 
 }
 
-@media screen and (max-width:900px) {
-    h1 {
-        font-size: 2em;
+@media screen and (max-width:960px) {
+
+
+    body {
+        font-size: 15px;
     }
 
-    h2 {
-        font-size: 5em;
-    }
+    @media screen and (max-width:840px) {
 
-    @media screen and (max-width:640px) {
+
         h2 {
             font-size: 5em;
         }
 
-        body {
-            font-size: 16px;
+        h3 {
+            padding: 0 120px;
+            font-size: 2.6em;
         }
 
-        .portfolio-info {
-            font-size: 25px;
+        h4 {
+            padding-top: 10px;
         }
 
-        .container-contact a {
-            font-size: 30px;
+        .menu button {
+            font-size: 15px;
+        }
+
+        .btn {
+            font-size: 15px;
+        }
+
+        .portfolio-title {
+            padding-bottom: 10px;
         }
 
         .container-profile {
@@ -416,7 +424,7 @@ h3 {
         .portfolio-item {
             flex-direction: column;
             width: 100%;
-            max-width: 400px;
+            max-width: 500px;
             margin-right: auto;
             margin-left: auto;
         }
@@ -436,36 +444,115 @@ h3 {
         }
 
 
+
     }
 
-    @media screen and (max-width:530px) {
-        h2 {
-            font-size: 3.5em;
+    @media screen and (max-width:700px) {
+
+        .container-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
-        .container-contact a {
-            font-size: 28px;
-            padding-top: 40px;
+        .btn-container {
+            flex-direction: column;
+            align-self: center;
         }
 
-        h1 {
-            font-size: 2.8em;
-        }
-
-        .logo {
-            width: 40px;
-        }
-
-        .main-title {
-            padding: 40px;
+        .btn-secondary {
+            margin: 0;
+            margin-top: 20px;
         }
 
         .line {
-            width: 85%;
-            margin-top: 20px;
+            width: 80%;
             border-radius: 5px;
+            height: 2px;
+            margin-top: 30px;
+            margin-bottom: 20px;
         }
 
+        .main-title {
+            margin: 0 50px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    @media screen and (min-width:700px) {
+
+        .left-main {
+            width: 30%;
+            /* display: flex; */
+
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        h3 {
+            padding: 0 40px;
+            font-size: 2.4em;
+        }
+    }
+
+    @media screen and (max-width:520px) {
+
+        h2 {
+            font-size: 4em;
+        }
+
+        .container-contact a {
+            font-size: 1.6em;
+        }
+
+    }
+
+    @media screen and (max-width:460px) {
+        body {
+            font-size: 14px;
+        }
+
+        h3 {
+            font-size: 2em;
+        }
+
+        h4 {
+            font-size: 1.5em;
+        }
+
+        .portfolio-title {
+            padding-bottom: 0;
+        }
+
+        .container-img {
+            width: 150px;
+            height: 150px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        .logo {
+            display: none;
+        }
+
+        nav {
+            padding: 10px 10px;
+        }
+
+        .menu {
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .menu button {
+            margin: 0 20px;
+        }
     }
 
     .animate__animated.animate__fadeIn {
